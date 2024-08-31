@@ -54,7 +54,7 @@ func (g *GitHttp) event(e Event) {
 	if g.EventHandler != nil {
 		g.EventHandler(e)
 	} else {
-		fmt.Printf("EVENT: %q\n", e)
+		fmt.Printf("EVENT: %+v\n", e)
 	}
 }
 
