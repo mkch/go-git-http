@@ -35,7 +35,7 @@ func (g *GitHttp) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func New(root string) *GitHttp {
 	return &GitHttp{
 		ProjectRoot: root,
-		GitBinPath:  "/usr/bin/git",
+		GitBinPath:  "git",
 		UploadPack:  true,
 		ReceivePack: true,
 	}
